@@ -34,7 +34,7 @@ Setup Instructions
 
 Clone the Repository
 
-git clone <repo-url>
+git clone https://github.com/DhirajManwar23/book-review-api
 cd book-review-api
 
 Install Dependencies
