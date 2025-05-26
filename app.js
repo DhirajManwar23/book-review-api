@@ -2,7 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const app = express();
-
+const Book = require("./models/Book");
 dotenv.config();
 app.use(express.json());
 
@@ -41,7 +41,7 @@ app.get("/api/books", async (req, res) => {
     res.status(500).json({ error: "Server error" });
   }
 });
-
+app.use("/api/books", require("./routes/bookRoutes"));
 app.use("/api", require("./routes/reviewRoutes"));
 app.use("/api/search", require("./routes/searchRoutes"));
 app.use("/api/search", require("./routes/searchRoutes"));
