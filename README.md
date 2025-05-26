@@ -54,7 +54,7 @@ Example API Requests
 
 Register
 
-curl -X POST http://localhost:5000//api/auth/register -H "Content-Type: application/json" -d '{"username": "john", "password": "123456"}'
+curl -X POST http://localhost:5000/api/auth/register -H "Content-Type: application/json" -d '{"username": "john", "password": "123456"}'
 
 Login
 
