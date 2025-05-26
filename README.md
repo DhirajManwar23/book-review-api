@@ -8,7 +8,7 @@ Authentication
 
 POST /api/auth/register: Register a new user
 
-POST /api/login: Login and get JWT token
+POST /api/auth/login: Login and get JWT token
 
 Book Endpoints
 
@@ -58,7 +58,7 @@ curl -X POST http://localhost:5000//api/auth/register -H "Content-Type: applicat
 
 Login
 
-curl -X POST http://localhost:5000/api/login -H "Content-Type: application/json" -d '{"username": "john", "password": "123456"}'
+curl -X POST http://localhost:5000/api/auth/login -H "Content-Type: application/json" -d '{"username": "john", "password": "123456"}'
 
 Add Book (Authenticated)
 
