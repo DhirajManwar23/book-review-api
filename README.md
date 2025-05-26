@@ -6,7 +6,7 @@ Features
 
 Authentication
 
-POST /api/signup: Register a new user
+POST /api/auth/register: Register a new user
 
 POST /api/login: Login and get JWT token
 
